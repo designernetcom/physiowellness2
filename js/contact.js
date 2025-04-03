@@ -126,6 +126,7 @@ Theme Version:	1.1.0
 							jQuery.ajax({
 								type: 'POST',
 								url: formAction,
+								
 								data: formData,
 								contentType: false,
 								cache: false,
