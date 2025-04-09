@@ -9074,7 +9074,7 @@ strong,
 	3.5 Section Spacing
 =================== */
 .section-sp1 {
-  padding-top: 00px;
+  padding-top: 50px;
   padding-bottom: 15px; }
   @media only screen and (max-width: 1199px) {
     .section-sp1 {
@@ -11738,7 +11738,7 @@ label.error {
 /* ==================
 	8.12 Home Banner
 =================== */
-.main-banner {
+/* .main-banner {
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -11892,8 +11892,32 @@ label.error {
         left: 45%; } }
   .main-banner .pt-img5 {
     bottom: 150px;
-    right: 150px; }
+    right: 150px; } */
 
+
+
+    .main-banner {
+      background-image: url("images/main-banner/BANNER%20PHYSIO(2).png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh; /* Adjust height as needed */
+    }
+    
+    @media (max-width: 768px) {
+      .main-banner {
+        height: 100vh;
+        margin-top: 100px; 
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .main-banner {
+        height: 30vh;
+        margin-top: 80px;
+      }
+    }
 /* ==================
 	8.23 Work Box
 =================== */
@@ -12050,7 +12074,7 @@ label.error {
       .about-thumb-area ul li:nth-child(2), .about-thumb-area ul li:nth-child(4) {
         width: 55%; }
   .about-thumb-area .about-thumb1 {
-    /* border-radius: 0 60px 60px; */
+    border-radius: 0 60px 60px;
     margin-top: auto;
     margin-left: auto; }
   .about-thumb-area .about-thumb2 {
