@@ -31,27 +31,27 @@
 			});
 		}
 		
-		var setBlogSwiper = function() {
-			if(!checkSelectorExistence('.blog-slide')){return;}
-			var swiper = new Swiper(".blog-slide", {
-				slidesPerView: 3,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
-				breakpoints: {
-					0:{
-						slidesPerView: 1,
-					},
-					768:{
-						slidesPerView: 2,
-					},
-					1200:{
-						slidesPerView: 3,
-					},
-				},
-			});			
-		}
+		// var setBlogSwiper = function() {
+		// 	if(!checkSelectorExistence('.blog-slide')){return;}
+		// 	var swiper = new Swiper(".blog-slide", {
+		// 		slidesPerView: 3,
+		// 		pagination: {
+		// 			el: ".swiper-pagination",
+		// 			clickable: true,
+		// 		},
+		// 		breakpoints: {
+		// 			0:{
+		// 				slidesPerView: 1,
+		// 			},
+		// 			768:{
+		// 				slidesPerView: 2,
+		// 			},
+		// 			1200:{
+		// 				slidesPerView: 3,
+		// 			},
+		// 		},
+		// 	});			
+		// }
 		
 		var setTestSwiper = function() {
 			if(!checkSelectorExistence('.testimonial-slide')){return;}
@@ -245,6 +245,14 @@
 		}
 		
 		/* Set Counter Up Function */
+		var setCounterUp = function(){
+			if(!checkSelectorExistence('.counter')){return;}
+			 jQuery('.counter').counterUp({
+				delay: 10,
+				time: 3000
+			});	
+		}
+
 		var setCounterUp = function(){
 			if(!checkSelectorExistence('.counter')){return;}
 			 jQuery('.counter').counterUp({
