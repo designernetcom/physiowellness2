@@ -14656,7 +14656,7 @@ blockquote {
     .menu-links .nav > li .sub-menu li:hover > a {
       background-color: transparent; }
   .header-transparent .is-fixed .menu-links .nav > li > a {
-    color: #fff; } }
+    color: #000; } }
 
 .nav-search-bar {
   background-color: rgba(255, 255, 255, 0.95);
